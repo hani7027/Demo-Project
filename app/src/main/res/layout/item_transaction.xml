@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.hk.atm.model.Transactions" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text.details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="@{Integer.toString(data.balance)}"
+            android:textAlignment="textStart" />
+
+        <TextView
+            style="@style/text.details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@{Integer.toString(data.cnt100)}" />
+
+        <TextView
+            style="@style/text.details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@{Integer.toString(data.cnt200)}" />
+
+        <TextView
+            style="@style/text.details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@{Integer.toString(data.cnt500)}" />
+
+        <TextView
+            style="@style/text.details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@{Integer.toString(data.cnt2000)}" />
+
+
+    </LinearLayout>
+</layout>
